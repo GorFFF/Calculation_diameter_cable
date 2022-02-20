@@ -1,8 +1,6 @@
 from math import sqrt
 
 
-# wire_dict = {}
-
 tms_sce = {"1.90": {"0.81": "TMS-SCE-1K-3/32-2.0-9         2.36     0.79     0000154314"},
            "2.66": {"1.11": "TMS-SCE-1K-1/8-2.0-9          3.18     1.07     0000112634"},
            "4.06": {"1.75": "TMS-SCE-1K-3/16-2.0-9         4.75     1.57     0000130298"},
@@ -43,10 +41,10 @@ def main_calculation_diameter():
             d = round(1.3 * sqrt(wire_dict[i]["n"]) * wire_dict[i]["Dср"])
             wire_dict[i]["D"] = d
         tms_choice(wire_dict)
-        tmp = input()
+        tmp = input("Для выхода нажми 'ENTER'")
     else:
         print("Помни ОРЁЛ всегда следит за тобой из гнезда, свитого из возвращенных кабелЕй!!!)")
-        tmp = input()
+        tmp = input("Для выхода нажми 'ENTER'")
 
 
 def tms_choice(wire_dict):
