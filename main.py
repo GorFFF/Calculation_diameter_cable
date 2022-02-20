@@ -40,7 +40,7 @@ def main_calculation_diameter():
         for i in wire_dict:
             d = round(1.3 * sqrt(wire_dict[i]["n"]) * wire_dict[i]["Dср"])
             wire_dict[i]["D"] = d
-        tms_choice(wire_dict)
+        tms_hoice(wire_dict)
         tmp = input("Для выхода нажми 'ENTER'")
     else:
         print("Помни ОРЁЛ всегда следит за тобой из гнезда, свитого из возвращенных кабелЕй!!!)")
